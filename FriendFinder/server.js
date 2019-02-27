@@ -12,9 +12,9 @@ app.use(express.json());
 //Router
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
-
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
+//app.use(express.static(__dirname + "/"));
 //Listener - is server connected
 
 app.listen(PORT, function () {
